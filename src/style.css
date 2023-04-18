@@ -21,10 +21,9 @@ body {
 .container {
   width: 500px;
   border: 3px solid #110101;
-  box-shadow: 0px 0px 15px 5px rgb(52, 47, 47),
-    0px 0px 15px 5px rgb(255, 25, 0) inset;
+  box-shadow: 0px 0px 5px 5px rgb(10, 10, 10), 0px 0px 7px 15px rgb(255, 25, 0);
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -41,8 +40,7 @@ button {
   cursor: none;
   margin: 0 3px;
   outline: 0;
-  box-shadow: 0px 0px 3px 2px rgb(52, 47, 47),
-    0px 0px 3px 2px rgb(255, 25, 0) inset;
+  box-shadow: 0px 0px 3px 2px rgb(52, 47, 47), 0px 0px 4px 5px rgb(255, 25, 0);
   transition: all 0.2s ease-out;
 }
 
@@ -79,7 +77,7 @@ input {
 
 /* test input plus foncé */
 input:hover {
-  background-color: #fad2d2;
+  background-color: #fe6f47;
   color: #070101;
   border: 1px solid rgb(8, 0, 0);
 }
@@ -88,11 +86,12 @@ input:hover {
   background-color: #eee;
   color: #070101;
 }
+
 /* test curseur*/
 .cursor {
-  width: 20px;
-  height: 20px;
-  border: 5px dashed rgb(233, 154, 154);
+  width: 40px;
+  height: 40px;
+  border: 5px dashed rgb(248, 3, 3);
   border-radius: 50%;
   position: absolute;
   animation: Anim1 3s infinite alternate;
@@ -113,8 +112,8 @@ input:hover {
 
 .expand {
   animation: Anim2 0.5s;
-  background: rgb(208, 16, 45);
-  border: 1px solid rgb(232, 6, 55);
+  background: rgb(255, 0, 0);
+  border: 1px solid rgb(9, 0, 0);
 }
 @keyframes Anim1 {
   from {
@@ -171,5 +170,5 @@ li .todo {
 }
 
 li .todo.done {
-  background: #333;
+  background: linear-gradient(to right, rgb(44, 42, 42), rgb(255, 0, 0));
 }

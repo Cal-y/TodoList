@@ -26,6 +26,11 @@ const todos = [
     text: "coding --) again and again ( -- ",
     done: true,
     editMode: false
+  },
+  {
+    text: "create even more projects",
+    done: true,
+    editMode: false
   }
 ];
 
